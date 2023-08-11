@@ -1,6 +1,7 @@
 <div>
     <H1>Flowenisty's Hyprland dotfiles <H1> 
 </div>
+
 - Window Manager: [Hyprland](https://github.com/hyprwm/Hyprland)
 
 - Shell: [Zsh](https://www.zsh.org/)
