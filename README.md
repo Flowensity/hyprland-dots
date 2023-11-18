@@ -12,9 +12,19 @@
 
 - launcher: [Wofi](https://man.archlinux.org/man/wofi.1)
 
-##Install
+## Install
 ```Shell
 prau -S hyprland waybar-hyprland dust wlogout nwg-look
 ```
 
-##Keybindings
+### Dependencies
+```Shell
+..
+```
+
+### App
+```Shell
+paru -S librewolf-bin thunar
+```
+
+## Keybindings
