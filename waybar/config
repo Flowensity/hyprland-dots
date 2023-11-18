@@ -12,11 +12,11 @@
   "format": "{icon}",
   "on-click": "activate",
   "format-icons": {
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": "",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
     "urgent": "",
     "active": "",
     "default": ""
@@ -33,7 +33,7 @@
     },
     
     "clock": {
-    "format": "{:%H:%M}  ",
+    "format": "{:%H:%M:%S}  ",
     "format-alt": "{:%A, %B %d, %Y (%R)}  ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -94,7 +94,7 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
     },
 
     "pulseaudio": {
