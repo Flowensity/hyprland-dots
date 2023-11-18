@@ -12,7 +12,8 @@
 
 - launcher: [Wofi](https://man.archlinux.org/man/wofi.1)
 
-## Install
+<details> <summary>Install</summary>
+
 ```Shell
 prau -S hyprland waybar-hyprland dust wlogout nwg-look
 ```
@@ -26,5 +27,7 @@ prau -S hyprland waybar-hyprland dust wlogout nwg-look
 ```Shell
 paru -S librewolf-bin thunar
 ```
+
+</details>
 
 ## Keybindings
