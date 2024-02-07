@@ -15,11 +15,13 @@
 <details> <summary><h2>Install</h2></summary>
 
 ```Shell
-prau -S hyprland waybar dust nwg-bar nwg-look swaylock-effects
+prau -S kitty hyprland waybar dust nwg-bar nwg-look swaylock-effects catppuccin-gtk-theme-macchiato \
+  tela-icon-theme-bin cava neofetch qt5ct nwg-look swww wofi swayidle
 ```
 
 ### Dependencies
 ```Shell
+paru -S 
 ..
 ```
 
