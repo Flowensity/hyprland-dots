@@ -15,7 +15,7 @@
 <details> <summary><h2>Install</h2></summary>
 
 ```Shell
-prau -S hyprland waybar-hyprland dust wlogout nwg-look
+prau -S hyprland waybar dust nwg-bar nwg-look swaylock-effects
 ```
 
 ### Dependencies
@@ -25,7 +25,8 @@ prau -S hyprland waybar-hyprland dust wlogout nwg-look
 
 ### App
 ```Shell
-paru -S librewolf-bin thunar
+paru -S librewolf-bin brave-bin thunar waydroid vlc koodo-reader-bin kdeconnect linux-wifi-hotspot \
+  obs-studio motrix-bin rustdesk-bin
 ```
 
 </details>
