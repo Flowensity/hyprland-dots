@@ -1,6 +1,8 @@
 <div>
     <H1>Flowenisty's Hyprland dotfiles <H1> 
 </div>
+## preview
+![preview img](preview.png) 
 
 - Window Manager: [Hyprland](https://github.com/hyprwm/Hyprland)
 
