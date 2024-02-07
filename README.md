@@ -12,10 +12,11 @@
 
 - launcher: [Wofi](https://man.archlinux.org/man/wofi.1)
 
-<details> <summary><h2>Install</h2></summary>
-
 ## preview
 ![preview](preview.png) 
+
+<details> <summary><h2>Install</h2></summary>
+
 ```Shell
 prau -S kitty hyprland waybar dust nwg-bar nwg-look swaylock-effects catppuccin-gtk-theme-macchiato \
   tela-icon-theme-bin cava neofetch qt5ct nwg-look swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
