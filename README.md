@@ -12,7 +12,7 @@
 
 - launcher: [Wofi](https://man.archlinux.org/man/wofi.1)
 
-## preview
+## Preview
 ![preview](preview.png) 
 
 <details> <summary><h2>Install</h2></summary>
