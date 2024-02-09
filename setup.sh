@@ -1,10 +1,6 @@
 #!/bin/bash
 hyprland='$HOME/hyprland-dots'
 
-# Downlaod dots
-echo "Downloading Dotfiles"
-cd && https://github.com/Flowensity/hyprland-dots.git
-
 # Installing paru
 echo "Installing paru"
 sudo pacman -S --needed base-devel
