@@ -5,6 +5,13 @@ hyprland='$HOME/hyprland-dots'
 echo "Downloading Dotfiles"
 cd && https://github.com/Flowensity/hyprland-dots.git
 
+# Installing paru
+echo "Installing paru"
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+
 # Installing Dependencies(arch only)
 echo "Installing Dependencies"
 prau -S kitty hyprland waybar dust nwg-bar nwg-look swaylock-effects catppuccin-gtk-theme-macchiato \
@@ -32,4 +39,5 @@ ln -s $HOME/hyprland/qt6ct ~/.config
 ln -s $HOME/hyprland/swaylock ~/.config
 ln -s $HOME/hyprland/waybar ~/.config
 ln -s $HOME/hyprland/setup.sh ~/setup.sh
-ln -s $HOME/.zshrc ~/.zshrc
+ln -s $HOME/hyprland/.zshrc ~/.zshrc
+ln -s $HOME/hyprland/.oh-my-zsh ~/.oh-my-zsh
