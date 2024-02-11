@@ -11,7 +11,7 @@ makepkg -si
 # Installing Dependencies (arch only)
 echo "Installing Dependencies"
 paru -S kitty hyprland waybar dust nwg-bar nwg-look swaylock-effects catppuccino-gtk-theme-macchiato \
-  tela-icon-theme-bin cava neofetch qt5ct nwg-look swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
+  tela-icon-theme-bin cava neofetch qt6ct nwg-look swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
   polkit-kde-agent xdg-desktop-portal clipman udiskie sddm-git zsh 
 
 # Installing Apps (arch only)
