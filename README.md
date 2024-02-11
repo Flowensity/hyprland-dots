@@ -19,13 +19,13 @@
 
 ```Shell
 prau -S kitty hyprland waybar dust nwg-bar nwg-look swaylock-effects catppuccin-gtk-theme-macchiato \
-  tela-icon-theme-bin cava neofetch qt5ct nwg-look swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
+  tela-icon-theme-bin cava neofetch qt6ct nwg-look swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
   polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm-git
 
 ```
 ### App
 ```Shell
-paru -S librewolf-bin brave-bin thunar waydroid vlc koodo-reader-bin kdeconnect linux-wifi-hotspot \
+paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect linux-wifi-hotspot \
   obs-studio motrix-bin rustdesk-bin
 ```
 
