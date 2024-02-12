@@ -1,12 +1,17 @@
 #!/bin/bash
 hyprland="$HOME/hyprland-dots" 
 
-# Installing paru
-echo "Installing paru"
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
+# Check if paru is installed
+if ! command -v paru &> /dev/null; then
+    # paru is not installed, install it
+    echo "Installing paru"
+    sudo pacman -S --needed base-devel
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
+    makepkg -si
+else
+    echo "paru is already installed, skipping installation."
+fi
 
 # Installing Dependencies (arch only)
 echo "Installing Dependencies"
@@ -19,7 +24,7 @@ echo "Installing Apps"
 paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect linux-wifi-hotspot \
   obs-studio motrix-bin rustdesk-bin
 
-# 创建软链接
+# Creating symbolic links
 echo "Creating symbolic links"
 ln -s $hyprland/kitty ~/.config
 ln -s $hyprland/nwg-look ~/.config
