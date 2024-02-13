@@ -15,18 +15,18 @@
 ## Preview
 ![preview](preview.png) 
 ## Install
-### Hyprland
+### Dependencies
 ```bash
 prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
   cava neofetch qt6ct swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
   polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm-git
 
 ```
-### Dependences
+### Themes
 ```bash
   paru -S catppuccin-gtk-theme-macchiato tela-icon-theme-bin
 ```
-### App
+### Apps
 ```bash
 paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect \
   linux-wifi-hotspot obs-studio motrix-bin rustdesk-bin
