@@ -17,16 +17,21 @@
 
 <details> <summary><h2>Install</h2></summary>
 
-```Shell
-prau -S kitty hyprland waybar dust nwg-bar nwg-look swaylock-effects catppuccin-gtk-theme-macchiato \
-  tela-icon-theme-bin cava neofetch qt6ct nwg-look swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
+### Hyprland
+```bash
+prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
+  cava neofetch qt6ct swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
   polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm-git
 
 ```
+### Dependences
+```bash
+  paru -S catppuccin-gtk-theme-macchiato tela-icon-theme-bin
+```
 ### App
-```Shell
-paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect linux-wifi-hotspot \
-  obs-studio motrix-bin rustdesk-bin
+```bash
+paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect \
+  linux-wifi-hotspot obs-studio motrix-bin rustdesk-bin
 ```
 
 </details>
@@ -43,8 +48,8 @@ paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect 
 | SUPER + R           | launch wofi      |
 | SUPER + SHIFT + F   | fullscreen       |
 | SUPER + H/J/K/L     | movefocus        |
-| SUPER + 1-9         | toggle workspace |
-| SUPER + SHIFT + 1-9 | movetoworkspace  |
+| SUPER + [1-9]         | toggle workspace |
+| SUPER + SHIFT + [1-9] | movetoworkspace  |
 | SUPER + mouse:272   | movewindow       |
 | SUPER + mouse:273   | resizewindow     |
 | SUPER +ESCAPE       | launch nwg-bar   |
