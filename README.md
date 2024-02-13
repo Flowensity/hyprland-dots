@@ -14,7 +14,7 @@
 
 ## Preview
 ![preview](preview.png) 
-
+## Install
 ### Hyprland
 ```bash
 prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
