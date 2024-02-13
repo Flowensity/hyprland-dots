@@ -15,8 +15,6 @@
 ## Preview
 ![preview](preview.png) 
 
-<details> <summary><h2>Install</h2></summary>
-
 ### Hyprland
 ```bash
 prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
@@ -33,8 +31,6 @@ prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
 paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect \
   linux-wifi-hotspot obs-studio motrix-bin rustdesk-bin
 ```
-
-</details>
 
 ## Keybindings
 | Keys                | Action           |
