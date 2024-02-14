@@ -1,5 +1,5 @@
 #!/bin/bash
-hyprland="$HOME/hyprland-dots" 
+hyprland="$HOME/Hyprland-dots" 
 
 # Check if paru is installed
 if ! command -v paru &> /dev/null; then
@@ -46,22 +46,22 @@ create_link() {
     echo "Created symbolic link for $source_dir in $target_dir"
 }
 
-create_link "$hyprland/kitty" ~/.config/kitty
-create_link "$hyprland/hypr" ~/.config/hypr
-create_link "$hyprland/waybar" ~/.config/waybar
-create_link "$hyprland/wofi" ~/.config/wofi
-create_link "$hyprland/scripts" ~/.config/scripts
-create_link "$hyprland/swaync" ~/.config/swaync
-create_link "$hyprland/cava" ~/.config/cava
-create_link "$hyprland/neofetch" ~/.config/neofetch
-create_link "$hyprland/wallpaper" ~/.config/wallpaper 
-create_link "$hyprland/xsettingsd" ~/.config/xsettingsd
-create_link "$hyprland/nwg-bar" ~/.config/nwg-bar
-create_link "$hyprland/nwg-look" ~/.config/nwg-look
-create_link "$hyprland/qt6ct" ~/.config/qt6ct
-create_link "$hyprland/swaylock" ~/.config/swaylock
-create_link "$hyprland/setup.sh" ~/.config/setup.sh
-create_link "$hyprland/xsettingsd" ~/.config/xsettingsd
-create_link "$hyprland/wallpaper" ~/.config/wallpaper
+create_link "$hyprland/kitty" ~/.config
+create_link "$hyprland/hypr" ~/.config
+create_link "$hyprland/waybar" ~/.config
+create_link "$hyprland/wofi" ~/.config
+create_link "$hyprland/scripts" ~/.config
+create_link "$hyprland/swaync" ~/.config
+create_link "$hyprland/cava" ~/.config
+create_link "$hyprland/neofetch" ~/.config
+create_link "$hyprland/wallpaper" ~/.config
+create_link "$hyprland/xsettingsd" ~/.config
+create_link "$hyprland/nwg-bar" ~/.config
+create_link "$hyprland/nwg-look" ~/.config
+create_link "$hyprland/qt6ct" ~/.config
+create_link "$hyprland/swaylock" ~/.config
+create_link "$hyprland/setup.sh" ~/.config
+create_link "$hyprland/xsettingsd" ~/.config
+create_link "$hyprland/wallpaper" ~/.config
 ln -s "$hyprland/.zshrc" ~/.zshrc
 create_link "$hyprland/.oh-my-zsh" ~/.oh-my-zsh
