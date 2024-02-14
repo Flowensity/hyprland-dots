@@ -47,19 +47,21 @@ create_link() {
 }
 
 create_link "$hyprland/kitty" ~/.config/kitty
-create_link "$hyprland/nwg-look" ~/.config/nwg-look
+create_link "$hyprland/hypr" ~/.config/hypr
+create_link "$hyprland/waybar" ~/.config/waybar
+create_link "$hyprland/wofi" ~/.config/wofi
 create_link "$hyprland/scripts" ~/.config/scripts
 create_link "$hyprland/swaync" ~/.config/swaync
-create_link "$hyprland/wofi" ~/.config/wofi
 create_link "$hyprland/cava" ~/.config/cava
 create_link "$hyprland/neofetch" ~/.config/neofetch
 create_link "$hyprland/wallpaper" ~/.config/wallpaper 
 create_link "$hyprland/xsettingsd" ~/.config/xsettingsd
-create_link "$hyprland/hypr" ~/.config/hypr
 create_link "$hyprland/nwg-bar" ~/.config/nwg-bar
+create_link "$hyprland/nwg-look" ~/.config/nwg-look
 create_link "$hyprland/qt6ct" ~/.config/qt6ct
 create_link "$hyprland/swaylock" ~/.config/swaylock
-create_link "$hyprland/waybar" ~/.config/waybar
 create_link "$hyprland/setup.sh" ~/.config/setup.sh
+create_link "$hyprland/xsettingsd" ~/.config/xsettingsd
+create_link "$hyprland/wallpaper" ~/.config/wallpaper
 ln -s "$hyprland/.zshrc" ~/.zshrc
 create_link "$hyprland/.oh-my-zsh" ~/.oh-my-zsh
