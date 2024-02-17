@@ -13,15 +13,15 @@ else
     echo "paru is already installed, skipping installation."
 fi
 
-# Installing Dependencies (arch only)
-echo "Installing Dependencies"
+# Installing Hyprland (arch only)
+echo "Installing Hyprland"
 paru -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
   cava neofetch qt6ct swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
   polkit-kde-agent xdg-desktop-portal clipman udiskie sddm-git zsh 
 
 # Installing Dependencies (arch only)
 echo "Installing Dependencies"
-paru -S catppuccino-gtk-theme-macchiato tela-icon-theme-bin
+paru -S catppuccino-gtk-theme-macchiato tela-icon-theme-bin ttf-font-awesome
 
 # Installing Apps (arch only)
 echo "Installing Apps"
