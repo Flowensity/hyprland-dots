@@ -1,8 +1,9 @@
 @import "mocha.css";
 
 * {
-    font-family: "FontAwesome", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: FontAwesome;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 window#waybar {
