@@ -47,6 +47,7 @@ create_link() {
 }
 
 create_link "$hyprland/kitty" ~/.config
+create_link "$hyprland/yazi" ~/.config
 create_link "$hyprland/hypr" ~/.config
 create_link "$hyprland/waybar" ~/.config
 create_link "$hyprland/wofi" ~/.config
