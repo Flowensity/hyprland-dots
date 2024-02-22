@@ -22,13 +22,13 @@ prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
   polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm-git
 
 ```
-### Themes
+### Themes and Fonts
 ```bash
-  paru -S catppuccin-gtk-theme-macchiato tela-icon-theme-bin
+  paru -S catppuccin-gtk-theme-macchiato tela-icon-theme-bin ttf-monaspace-variable ttf-font-awesome
 ```
 ### Apps
 ```bash
-paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect \
+paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
   linux-wifi-hotspot obs-studio motrix-bin rustdesk-bin
 ```
 
@@ -43,7 +43,7 @@ paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect 
 | SUPER + V           | togglefloating   |
 | SUPER + R           | launch wofi      |
 | SUPER + SHIFT + F   | fullscreen       |
-| SUPER + H/J/K/L     | movefocus        |
+| SUPER + [H/J/K/L]     | movefocus        |
 | SUPER + [1-9]         | toggle workspace |
 | SUPER + SHIFT + [1-9] | movetoworkspace  |
 | SUPER + mouse:272   | movewindow       |
