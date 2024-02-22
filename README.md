@@ -43,7 +43,7 @@ paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
 | SUPER + V           | togglefloating   |
 | SUPER + R           | launch wofi      |
 | SUPER + SHIFT + F   | fullscreen       |
-| SUPER + [H/J/K/L]     | movefocus        |
+| SUPER + [HJKL]     | movefocus        |
 | SUPER + [1-9]         | toggle workspace |
 | SUPER + SHIFT + [1-9] | movetoworkspace  |
 | SUPER + mouse:272   | movewindow       |
