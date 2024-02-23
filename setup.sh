@@ -25,7 +25,7 @@ paru -S catppuccino-gtk-theme-macchiato tela-icon-theme-bin ttf-font-awesome
 
 # Installing Apps (arch only)
 echo "Installing Apps"
-paru -S librewolf-bin brave-bin thunar waydroid mpv koodo-reader-bin kdeconnect linux-wifi-hotspot \
+paru -S librewolf-bin brave-bin yazi waydroid mpv koodo-reader-bin kdeconnect linux-wifi-hotspot \
   obs-studio motrix-bin rustdesk-bin
 
 # Creating symbolic links
