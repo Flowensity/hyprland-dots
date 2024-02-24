@@ -37,7 +37,6 @@ alias grep='grep --color=auto'
 alias cls='clear'
 
 alias v="nvim"
-alias r="ranger"
 
 alias zshconfig="vim ~/.zshrc"
 
