@@ -1,16 +1,23 @@
+/* window styling */
 window {
-  /* border: 2px solid red; */
   background-color: #1e222a;
   padding: 50px;
 }
 
+/* common styling for input and entry */
+#input,
+#entry {
+  border-radius: 20px;
+}
+
+/* input styling */
 #input {
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
   margin: 20px 15px;
 }
 
+/* remove border on focus and selection for input and entry */
 #input:focus,
 #input:selected,
 #entry:selected,
@@ -18,23 +25,24 @@ window {
   border-color: transparent;
 }
 
+/* inner-box styling */
 #inner-box {
   margin: 20px;
 }
 
+/* img styling */
 #img {
-  margin: 10px 10px;
+  margin: 10px;
 }
 
-#entry {
-  border-radius: 20px;
-}
-
+/* remove background color on selection for text and img */
 #text:selected,
 #img:selected {
   background-color: transparent;
 }
 
+/* set background color on entry selection */
 #entry:selected {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
