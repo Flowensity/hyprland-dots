@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 hyprland="$HOME/Hyprland-dots" 
 
 # Check if paru is installed
