@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="arrow"
+ZSH_THEME="awesomepanda"
 
 # Plugins
 plugins=(
@@ -36,8 +36,17 @@ alias grep='grep --color=auto'
 # Clear the terminal screen
 alias cls='clear'
 
-alias v="nvim"
+alias vim="nvim"
 
 alias zshconfig="vim ~/.zshrc"
 
 neofetch
+
+function ya() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
