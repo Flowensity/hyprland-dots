@@ -40,8 +40,6 @@ alias vim="nvim"
 
 alias zshconfig="vim ~/.zshrc"
 
-neofetch
-
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
