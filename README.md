@@ -17,9 +17,9 @@
 ## Install
 ### Dependencies
 ```bash
-prau -S kitty hyprland waybar swaync nwg-bar nwg-look swaylock-effects \
-  cava neofetch qt6ct swww wofi swayidle grim slurp qt5-wayland qt6-wayland \
-  polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm-git
+prau -S kitty hyprland waybar swaync nwg-bar nwg-look hyprlock \
+  cava neofetch qt6ct swww wofi hypridle grim slurp qt5-wayland qt6-wayland \
+  polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm
 
 ```
 ### Themes and Fonts

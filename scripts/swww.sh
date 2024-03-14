@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
+
 DIR=$HOME/.config/wallpaper/
+
 
 PICS=($(ls ${DIR}))
 
