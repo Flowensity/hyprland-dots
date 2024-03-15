@@ -101,6 +101,3 @@ window#waybar {
     background-color: @crust;
 }
 
-#custom-notification {
-    color: @red;
-}
