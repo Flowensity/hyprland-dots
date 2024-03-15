@@ -17,8 +17,8 @@
 ## Install
 ### Dependencies
 ```bash
-prau -S kitty hyprland waybar swaync nwg-bar nwg-look hyprlock \
-  cava neofetch qt6ct swww wofi hypridle grim slurp qt5-wayland qt6-wayland \
+prau -S kitty hyprland waybar mako nwg-bar nwg-look hyprlock \
+  cava neofetch qt6ct swww tofi hypridle grim slurp qt5-wayland qt6-wayland \
   polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm
 
 ```
