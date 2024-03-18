@@ -17,9 +17,9 @@
 ## Install
 ### Dependencies
 ```bash
-prau -S kitty hyprland waybar mako nwg-bar nwg-look hyprlock \
-  cava neofetch qt6ct swww tofi hypridle grim slurp qt5-wayland qt6-wayland \
-  polkit-kde-agent xdg-desktop-portal cliphist udiskie sddm
+prau -S kitty hyprland waybar mako nwg-bar nwg-look hypridle hyprlock \
+  cava neofetch qt6ct swww tofi grim slurp qt5-wayland qt6-wayland \
+  polkit-kde-agent xdg-desktop-portal clipse udiskie sddm
 
 ```
 ### Themes and Fonts
@@ -35,15 +35,14 @@ paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
 ## Keybindings
 | Keys                | Action           |
 |:-------------------:|:----------------:|
-| SUPER + Q           | launch kitty     |
+| SUPER + Return      | launch kitty     |
 | SUPER + B           | launch librewolf |
-| SUPER + C           | killactive       |
+| SUPER + Q           | killactive       |
 | SUPER + M           | quit hyprland    |
-| SUPER + E           | launch thunar    |
-| SUPER + V           | togglefloating   |
-| SUPER + R           | launch wofi      |
+| SUPER + F           | togglefloating   |
+| SUPER + R           | launch tofi      |
 | SUPER + SHIFT + F   | fullscreen       |
-| SUPER + [HJKL]     | movefocus        |
+| SUPER + [HJKL]      | movefocus        |
 | SUPER + [1-9]         | toggle workspace |
 | SUPER + SHIFT + [1-9] | movetoworkspace  |
 | SUPER + mouse:272   | movewindow       |
@@ -51,6 +50,6 @@ paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
 | SUPER +ESCAPE       | launch nwg-bar   |
 | SUPER + SHIFT + S   | screenshot       |
 | SUPER + SHIFT + L   | launch swaylock  |
-| SUPER + X           | clipboard        |
+| SUPER + V           | clipboard        |
 | SUPER + SHIFT + W   | chang wallpaper  |
 
