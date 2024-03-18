@@ -10,7 +10,7 @@
 
 - Status Bar: [Waybar](https://github.com/Alexays/Waybar)
 
-- launcher: [Wofi](https://man.archlinux.org/man/wofi.1)
+- launcher: [Tofi](https://github.com/philj56/tofi)
 
 ## Preview
 ![preview](preview.png) 
