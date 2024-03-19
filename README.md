@@ -43,12 +43,14 @@ paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
 | SUPER + R           | launch tofi      |
 | SUPER + SHIFT + F   | fullscreen       |
 | SUPER + [HJKL]      | movefocus        |
+| SUPER + SHIFT +  [HJKL]      | movewindow        |
+| SUPER + CTRL + SHIFT + [HJKL]      | resizeactive        |
 | SUPER + [1-9]         | toggle workspace |
 | SUPER + SHIFT + [1-9] | movetoworkspace  |
 | SUPER + mouse:272   | movewindow       |
 | SUPER + mouse:273   | resizewindow     |
-| SUPER +ESCAPE       | launch nwg-bar   |
-| SUPER + SHIFT + S   | screenshot       |
+| SUPER + ESCAPE       | launch nwg-bar   |
+| SUPER + ALT + SHIFT + S   | screenshot       |
 | SUPER + SHIFT + L   | launch swaylock  |
 | SUPER + V           | clipboard        |
 | SUPER + SHIFT + W   | chang wallpaper  |
