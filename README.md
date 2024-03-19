@@ -50,8 +50,8 @@ paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
 | SUPER + mouse:272   | movewindow       |
 | SUPER + mouse:273   | resizewindow     |
 | SUPER + ESCAPE       | launch nwg-bar   |
-| SUPER + ALT + SHIFT + S   | screenshot       |
-| SUPER + SHIFT + L   | launch swaylock  |
+| SUPER + SHIFT + S   | screenshot       |
+| SUPER + ALT + SHIFT + L   | launch hyprlock  |
 | SUPER + V           | clipboard        |
 | SUPER + SHIFT + W   | chang wallpaper  |
 
