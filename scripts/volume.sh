@@ -1,30 +1,14 @@
 #!/usr/bin/env bash
 
-iDIR="$HOME/.config/mako/icons"
-
 # Get Volume
 get_volume() {
 	volume=$(pamixer --get-volume)
 	echo "$volume"
 }
 
-# Get icons
-get_icon() {
-	current=$(get_volume)
-	if [[ "$current" -eq "0" ]]; then
-		echo "$iDIR/volume-mute.png"
-	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
-		echo "$iDIR/volume-low.png"
-	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
-		echo "$iDIR/volume-mid.png"
-	elif [[ ("$current" -ge "60") && ("$current" -le "100") ]]; then
-		echo "$iDIR/volume-high.png"
-	fi
-}
-
 # Notify
 notify_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume : $(get_volume) %"
+	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Volume : $(get_volume) %"
 }
 
 # Increase Volume
@@ -40,36 +24,24 @@ dec_volume() {
 # Toggle Mute
 toggle_mute() {
 	if [ "$(pamixer --get-mute)" == "false" ]; then
-		pamixer -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/volume-mute.png" "Volume Switched OFF"
+		pamixer -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Volume Switched OFF"
 	elif [ "$(pamixer --get-mute)" == "true" ]; then
-		pamixer -u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume Switched ON"
+		pamixer -u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "Volume Switched ON"
 	fi
 }
 
 # Toggle Mic
 toggle_mic() {
 	if [ "$(pamixer --default-source --get-mute)" == "false" ]; then
-		pamixer --default-source -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone-mute.png" "Microphone Switched OFF"
+		pamixer --default-source -m && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Microphone Switched OFF"
 	elif [ "$(pamixer --default-source --get-mute)" == "true" ]; then
-		pamixer -u --default-source u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/microphone.png" "Microphone Switched ON"
+		pamixer -u --default-source u && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Microphone Switched ON"
 	fi
 }
-# Get icons
-get_mic_icon() {
-	current=$(pamixer --default-source --get-volume)
-	if [[ "$current" -eq "0" ]]; then
-		echo "$iDIR/microphone.png"
-	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
-		echo "$iDIR/microphone.png"
-	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
-		echo "$iDIR/microphone.png"
-	elif [[ ("$current" -ge "60") && ("$current" -le "100") ]]; then
-		echo "$iDIR/microphone.png"
-	fi
-}
+
 # Notify
 notify_mic_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_mic_icon)" "Mic-Level : $(pamixer --default-source --get-volume) %"
+	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Mic-Level : $(pamixer --default-source --get-volume) %"
 }
 
 # Increase MIC Volume
