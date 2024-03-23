@@ -19,7 +19,7 @@
 ```bash
 prau -S kitty hyprland waybar mako nwg-bar nwg-look hypridle hyprlock \
   cava neofetch qt6ct swww tofi grim slurp qt5-wayland qt6-wayland \
-  polkit-kde-agent xdg-desktop-portal clipse udiskie sddm
+  polkit-kde-agent xdg-desktop-portal clipse udiskie sddm pamixer
 
 ```
 ### Themes and Fonts
