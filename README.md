@@ -12,8 +12,6 @@
 
 - launcher: [Tofi](https://github.com/philj56/tofi)
 
-## Preview
-![preview](preview.png) 
 ## Install
 ### Dependencies
 ```bash
