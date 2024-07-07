@@ -41,7 +41,6 @@ window#waybar {
 #network,
 #pulseaudio,
 #wireplumber,
-#bluetooth,
 #tray {
     padding: 0 4px;
 }
@@ -54,10 +53,6 @@ window#waybar {
 
 #network {
     color: @yellow;
-}
-
-#bluetooth {
-    color: @lavender;
 }
 
 #window {

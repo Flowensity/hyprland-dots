@@ -5,7 +5,6 @@
   "modules-right": [
     "pulseaudio",
     "network",
-    "bluetooth",
     "memory",
     "cpu",
     "backlight",
@@ -17,7 +16,7 @@
   // Modules configuration
 
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": "{name}",
     "on-click": "activate",
     "format-icons": {
       "1": "1",
@@ -31,7 +30,6 @@
     },
     "sort-by-number": true
   },
-
   "hyprland/window": {
     "format": " {}",
     "rewrite": {
@@ -80,6 +78,7 @@
   },
 
   "memory": {
+    "interval": 10,
     "format": "{}% "
   },
 
@@ -103,8 +102,9 @@
   },
 
   "network": {
-    "format-wifi": "{essid} ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
+    "interval": 1,
+    "format-wifi": "{bandwidthUpBytes}  {bandwidthDownBytes} ",
+    "format-ethernet": "{bandwidthUpBytes}  {bandwidthDownBytes} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
@@ -112,32 +112,20 @@
   },
 
   "pulseaudio": {
-    "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": " {icon}",
+    "format-muted": " ",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
       "headset": "",
-      "phone": "",
-      "portable": "",
+      "phone": " ",
+      "portable": " ",
       "car": "",
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
-  },
-
-  "bluetooth": {
-    "format": "{status} ",
-    "format-connected": "{device_alias} ",
-    "format-connected-battery": "{device_alias} {device_battery_percentage}% ",
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   }
 }
 
