@@ -27,7 +27,7 @@ prau -S kitty hyprland waybar mako nwg-look hypridle hyprlock \
 ```
 ### Apps
 ```bash
-paru -S librewolf-bin brave-bin waydroid mpv koodo-reader-bin kdeconnect \
+paru -S mullvad-browser-bin brave-bin waydroid mpv foliate \
   linux-wifi-hotspot obs-studio motrix-bin rustdesk-bin
 ```
 
