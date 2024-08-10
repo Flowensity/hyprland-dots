@@ -15,10 +15,10 @@
 ## Install
 ### Dependencies
 ```bash
-prau -S kitty hyprland waybar mako nwg-bar nwg-look hypridle hyprlock \
-  cava neofetch qt6ct swww tofi grim slurp qt5-wayland qt6-wayland \
-  polkit-kde-agent xdg-desktop-portal clipse udiskie sddm pamixer \
-  sway-audio-idle-inhibit-git
+prau -S kitty hyprland waybar mako nwg-look hypridle hyprlock \
+  cava fastfetch qt6ct swww tofi grim slurp qt5-wayland qt6-wayland \
+  polkit-kde-agent xdg-desktop-portal clipse udiskie pamixer \
+  sway-audio-idle-inhibit-git greetd
 
 ```
 ### Themes and Fonts
