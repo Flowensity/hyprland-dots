@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+# Get brightness
+get_backlight() {
+	LIGHT=$(brightnessctl g)
+	echo "${LIGHT}"
+}
+
+# Get backlight percentage
+get_backlight_percentage() {
+  BRIGHTNESS=$(get_backlight)
+  MAX_BRIGHTNESS=$(brightnessctl -m | awk -F ',' '{print $NF}')
+  PERCENTAGE=$((BRIGHTNESS * 100 / MAX_BRIGHTNESS))
+  echo "$PERCENTAGE"
+}
+
+# Notify
+notify_user() {
+  notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Brightness : $(get_backlight_percentage)%"
+}
+
+# Increase brightness
+inc_backlight() {
+	brightnessctl s +5% && notify_user
+}
+
+# Decrease brightness
+dec_backlight() {
+	brightnessctl s 5%- && notify_user
+}
+
+# Execute accordingly
+case "$1" in
+  --get)
+    get_backlight
+    ;;
+  --inc)
+    inc_backlight
+    ;;
+  --dec)
+    dec_backlight
+    ;;
+  *)
+    exit 1
+    ;;
+esac
